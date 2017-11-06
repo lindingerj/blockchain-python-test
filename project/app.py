@@ -16,7 +16,7 @@ api = Api(app)
 
 @app.route("/")
 def index():
-    return "/api/"
+    return "Go to <a href='/chain'>/chain</a>"
 
 @app.route("/mine", methods=["GET"])
 def mine():
